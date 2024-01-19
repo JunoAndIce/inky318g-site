@@ -105,7 +105,7 @@ fade {
 #main-img {
   height: 100%;
   width: 275%;
-  filter: brightness(55%);
+  filter: brightness(15%);
   
   z-index: -1;
 
