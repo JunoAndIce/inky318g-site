@@ -1,42 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>318 Ink</title>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/loader.css" />
+  <link rel="stylesheet" href="./assets/css/menu.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@100;200&family=Permanent+Marker&family=Poppins:wght@100;400;800&Roboto:wght@500&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-  
 
 
 
 
-<div id="loader_ctn">
-  <span class="loader"></span>
-</div>
 
-<div id="main_page">
-
-  <div id="background_ctn">
-    <faded />
-    <img id="top-img" src="./assets/images/GERARD-FIXED.png">
-    <img id="main-img" src="./assets/images/GERARD-BG.png">
-    <fade />
+  <div id="loader_ctn">
+    <span class="loader"></span>
   </div>
 
+  <div id="main_page">
+
+    <div id="navbar">
+
+      <a id="menu_logo" href="/" aria-current="page">
+        <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
+      </a>
+
+      <div id="menu_container" onclick="openMenu(this)">
+        <div id="bar1"></div>
+        <div id="bar2"></div>
+        <div id="bar3"></div>
+      </div>
+
+    </div>
+
+    <div id="background_ctn">
+      <img id="top-img" src="./assets/images/GERARD-FIXED.png">
+      <img id="main-img" src="./assets/images/GERARD-BG.png">
+      <fade />
+    </div>
 
 
-  <div id="header">
-    <a id="main_logo" href="/" aria-current="page">
-      <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
-    </a>
+
+    <div class="logo-container">
+      <a id="main_logo" href="/" aria-current="page">
+        <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
+      </a>
+      
+    </div>
+
+    <div id="arrow_ctn">
+      <i class="fa-solid fa-arrow-down"></i>
+    </div>
+    
+
+    
+
+    <div id="main_content_ctn">
+      
+      <div id="projects_sec">
+        <h1>Designs</h1>
+
+
+        <div id="project_ctn">
+
+          <div class="proj_card">
+            <a id="main_proj" href="/" aria-current="page">
+              <img src="./assets/images/LOGO.png">
+            </a>
+            <p>Tattoo Design # 1</p>
+          </div>
+
+          <div class="proj_card">
+            <a id="main_proj" href="/" aria-current="page">
+              <img src="./assets/images/LOGO.png">
+            </a>
+            <p>Tattoo Design # 1</p>
+          </div>
+
+          <div class="proj_card">
+            <a id="main_proj" href="/" aria-current="page">
+              <img src="./assets/images/LOGO.png">
+            </a>
+            <p>Tattoo Design # 1</p>
+          </div>
+
+          <div class="proj_card">
+            <a id="main_proj" href="/" aria-current="page">
+              <img src="./assets/images/LOGO.png">
+            </a>
+            <p>Tattoo Design # 1</p>
+          </div>
+
+          <div class="proj_card">
+            <p class="font_marker">View More.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <div id="first_block">
+        <h1>I am Inky318g.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis, obcaecati cumque consectetur ullam quod quibusdam inventore fugit atque cupiditate, nostrum voluptatibus numquam a laudantium officiis pariatur beatae, quidem non?
+        Autem quae culpa itaque, vitae voluptatem dolore alias voluptas possimus, vero nesciunt veritatis magni, incidunt quam cumque distinctio! Doloremque facere autem, magni necessitatibus omnis facilis quaerat quasi sequi a optio?</p>
+      </div>
+      
+
+
+    </div>
   </div>
-
-
-
-</div>
 
 
 
@@ -45,6 +127,8 @@
 
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
     crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/9cb376baee.js" crossorigin="anonymous"></script>
   <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
