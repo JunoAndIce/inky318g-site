@@ -16,11 +16,6 @@
 </head>
 
 <body>
-
-
-
-
-
   <div id="loader_ctn">
     <span class="loader"></span>
   </div>
@@ -29,46 +24,77 @@
 
     <div id="navbar">
 
-      <a id="menu_logo" href="/" aria-current="page">
-        <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
-      </a>
+      <div id="navbar_item_1">
 
-      <div id="menu_container" onclick="openMenu(this)">
-        <div id="bar1"></div>
-        <div id="bar2"></div>
-        <div id="bar3"></div>
+        <!-- * Navbar logo  -->
+        <div id="menu_logo_ctn">
+          <a id="menu_logo" href="/" aria-current="page">
+            <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
+          </a>
+        </div>
+
+
+        <!-- * Hamburger Menu credit to Mikael Ainalem  -->
+        <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="openMenu(this)">
+          <script>
+            const openMenu = function (event) {
+              event.classList.toggle('active');
+              const menuCtn = document.getElementById('menu_ctn');
+              menuCtn.classList.toggle('visible');
+            }
+          </script>
+          <path class="line top" d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+          <path class="line middle" d="m 70,50 h -40" />
+          <path class="line bottom"
+            d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+        </svg>
+      </div>
+
+      <!-- * Menu Section  -->
+      <div id="menu_ctn">
+        <ul id="menu">
+          <li><span>&#9827;</span><a href="#projects_sec">Tattoo Designs</a></li>
+          <li><span>&#9827;</span><a href="#booking_block">Book an Appointment</a></li>
+          <li><span>&#9827;</span><a>Artwork</a></li>
+          <li><span>&#9827;</span><a href="#first_block">About Me</a></li>
+        </ul>
       </div>
 
     </div>
 
+    <!-- * Backgrounds  -->
     <div id="background_ctn">
       <img id="top-img" src="./assets/images/GERARD-FIXED.png">
       <img id="main-img" src="./assets/images/GERARD-BG.png">
-      <fade />
+      <fade/>
     </div>
 
 
-
+    <!-- * Background Logo  -->
     <div class="logo-container">
       <a id="main_logo" href="/" aria-current="page">
         <img style="background:none" src="./assets/images/LOGO.png" alt="318 Ink logo.">
       </a>
-      
+
+    </div>
+
+    <!-- * Quick book Appointment  -->
+    <div id="book_text">
+      <!-- <img src="./assets/images/click me circle.png"> -->
+      <a class="font_aze" href="#booking_block">Book an Appointment Today!</a>
     </div>
 
     <div id="arrow_ctn">
       <i class="fa-solid fa-chevron-down"></i>
     </div>
-    
 
-    
+
+
 
     <div id="main_content_ctn">
-      
-      <div id="projects_sec">
+
+      <!-- <div id="projects_sec">
         <h1>Designs</h1>
-
-
         <div id="project_ctn">
 
           <div class="proj_card">
@@ -104,17 +130,34 @@
           </div>
 
         </div>
+      </div> -->
+
+
+      <div id="deals_block">
+        <h1 class="font_roboto">New Years Deal!</h1>
+        <p class="font_roboto">Take part in our new years deal!</p>
+        <p class="font_roboto">Jan 1 to Jan 31</p>
       </div>
-
-
 
 
       <div id="first_block">
         <h1>I am Inky318g.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis, obcaecati cumque consectetur ullam quod quibusdam inventore fugit atque cupiditate, nostrum voluptatibus numquam a laudantium officiis pariatur beatae, quidem non?
-        Autem quae culpa itaque, vitae voluptatem dolore alias voluptas possimus, vero nesciunt veritatis magni, incidunt quam cumque distinctio! Doloremque facere autem, magni necessitatibus omnis facilis quaerat quasi sequi a optio?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit facilis, obcaecati cumque consectetur ullam
+          quod quibusdam inventore fugit atque cupiditate, nostrum voluptatibus numquam a laudantium officiis pariatur
+          beatae, quidem non?
+          Autem quae culpa itaque, vitae voluptatem dolore alias voluptas possimus, vero nesciunt veritatis magni,
+          incidunt quam cumque distinctio! Doloremque facere autem, magni necessitatibus omnis facilis quaerat quasi
+          sequi a optio?</p>
       </div>
-      
+
+
+      <div id="booking_block">
+        <h1>Booking</h1>
+        <div id="typeform_ctn">
+
+        </div>
+      </div>
+
 
 
     </div>

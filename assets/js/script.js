@@ -39,26 +39,24 @@ setTimeout(async () => {
 
 
 window.addEventListener('scroll', function() {
-  var arrow = document.getElementById('arrow_ctn');
+
+  const arrow = document.getElementById('arrow_ctn');
+  const navbar = document.getElementById('navbar');
+  const menuCtn = document.getElementById('menu_ctn');
+
   if (window.scrollY > 0) {
-    // User has scrolled down, hide the arrow
+    // User has scrolled down, hide the arrow and the menu_ctn if it's not active
     arrow.style.opacity = '0';
     navbar.classList.add('navbar-visible');
   } else {
-    // User has scrolled to the top, show the arrow
+
     arrow.style.opacity = '1';
     navbar.classList.remove('navbar-visible');
   }
 });
 
 
-// document.addEventListener('DOMContentLoaded', (event) => {
-//   const navbar = document.getElementById('navbar');
-//   window.addEventListener('scroll', () => {
-//     if (window.scrollY > 0) {
-//       navbar.classList.add('navbar-visible');
-//     } else {
-//       navbar.classList.remove('navbar-visible');
-//     }
-//   });
-// });
+
+// const openMenu = function (event) {
+//   this.classList.toggle('active');
+// }
