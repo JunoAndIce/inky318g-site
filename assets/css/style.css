@@ -95,7 +95,6 @@ fade {
   /* padding-top: 10px; */
 }
 
-
 #navbar.navbar-visible {
   display: block;
   background-color: rgba(16, 16, 16, 0.8); /* slightly darker background */
@@ -136,7 +135,6 @@ fade {
   color: rgb(255, 0, 0) !important;
   text-decoration: none;
 }
-
 /* ! MENU SECTION */
 
 /* ! BACKGROUND SECIION  */
@@ -164,7 +162,6 @@ fade {
   margin: auto;
   /* Image Centering  */
 }
-
 
 #top-img {
   height: 100%;
@@ -205,7 +202,6 @@ fade {
 
 
 /* ! PROJECT SECTION  */
-
 .proj_card {
   margin-top: 100px;
 }
@@ -218,12 +214,9 @@ fade {
 
   padding-top: 20px;
 }
-
-
 /* ! PROJECT SECTION  */
 
 /* ! FLAVOR TEXT SECTION  */
-
 #main_content_ctn {
   display: flex;
   flex-direction: column;
