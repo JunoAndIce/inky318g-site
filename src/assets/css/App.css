@@ -1,0 +1,17 @@
+/* ! HERO SECTION ! */
+
+/* .hero{
+  height: 100vh;
+} */
+
+.navbar {
+  background-color: hsla(0, 0%, 100%, 0) !important;
+}
+
+.navbar_img img{
+  max-height: 300px;
+}
+
+.hero_img{
+  background-image: url(../images/stock_tattoo.webp);
+}
